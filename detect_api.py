@@ -3,11 +3,11 @@ import torch
 import os
 from PIL import Image
 from io import BytesIO
-
+from ultralytics import YOLO
 app = Flask(__name__)
 
 # Load model
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='runs/train/smartfarm_model/weights/best.pt')
+model = model = YOLO("best.pt")
 
 @app.route('/detect', methods=['POST'])
 def detect():
