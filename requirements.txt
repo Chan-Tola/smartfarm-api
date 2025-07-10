@@ -1,6 +1,31 @@
-flask
-torch
-pillow
-opencv-python
-ultralytics
-gunicorn
+# YOLOv5 requirements
+# Usage: pip install -r requirements.txt
+
+# Base ------------------------------------------------------------------------
+
+
+# Logging ---------------------------------------------------------------------
+# tensorboard>=2.4.1
+# clearml>=1.2.0
+# comet
+
+
+# Export ----------------------------------------------------------------------
+# coremltools>=6.0  # CoreML export
+# onnx>=1.10.0  # ONNX export
+# onnx-simplifier>=0.4.1  # ONNX simplifier
+# nvidia-pyindex  # TensorRT export
+# nvidia-tensorrt  # TensorRT export
+# scikit-learn<=1.1.2  # CoreML quantization
+# tensorflow>=2.4.0,<=2.13.1  # TF exports (-cpu, -aarch64, -macos)
+# tensorflowjs>=3.9.0  # TF.js export
+# openvino-dev>=2023.0  # OpenVINO export
+
+# Deploy ----------------------------------------------------------------------
+# tritonclient[all]~=2.24.0
+
+# Extras ----------------------------------------------------------------------
+# ipython  # interactive notebook
+# mss  # screenshots
+# albumentations>=1.0.3
+# pycocotools>=2.0.6  # COCO mAP
